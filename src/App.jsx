@@ -1,7 +1,7 @@
-import { Counter } from "./components/counter";
+// import { Counter } from "./components/counter";
 
-export const App = () => {
-  return <Counter />;
-};
+// export const App = () => {
+//   return <Counter />;
+// };
 
-// rafce
+// // rafce
