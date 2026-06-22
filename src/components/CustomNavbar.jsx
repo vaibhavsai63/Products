@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from "react-router";
 
 export function CustomNavbar() {
   return (
@@ -18,19 +19,19 @@ export function CustomNavbar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link ><NavLink to={"/"}>Home</NavLink></Nav.Link>
+            <Nav.Link ><NavLink to={"/Service"}>Service</NavLink></Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item ><NavLink to={"/Counter"}>Counter</NavLink></NavDropdown.Item>
+              <NavDropdown.Item >
                 Another action
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item >
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
+            <Nav.Link  disabled>
               Link
             </Nav.Link>
           </Nav>

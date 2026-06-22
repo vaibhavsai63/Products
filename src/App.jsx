@@ -1,10 +1,13 @@
-import { Counter } from "./components/Counter"
+import { CustomCarousel } from "./components/CustomCarousel";
+import { CustomNavbar } from "./components/CustomNavbar";
+import Products from "./components/Products";
 
-
-export const App = () => {
-  return (
-    <Counter/>
-  )
-}
-
-export default App
+export const Home=()=>{
+    return(
+        <>
+        <CustomNavbar/>
+        <CustomCarousel/>
+        <Products/>
+        </>
+    )
+};
